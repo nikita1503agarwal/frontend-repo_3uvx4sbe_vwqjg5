@@ -3,6 +3,10 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import Workshops from './components/Workshops'
 import Sectors from './components/Sectors'
+import Animations from './components/Animations'
+import Pricing from './components/Pricing'
+import Testimonials from './components/Testimonials'
+import Story from './components/Story'
 import Contact from './components/Contact'
 
 function App() {
@@ -13,8 +17,12 @@ function App() {
       <main className="relative z-10">
         <Hero />
         <Features />
+        <Animations />
         <Workshops />
         <Sectors />
+        <Pricing />
+        <Testimonials />
+        <Story />
         <Contact />
         <footer className="border-t border-white/10 py-10 text-center text-sm text-blue-200/70">
           © {new Date().getFullYear()} MedTech AI Solutions • Tuttlingen, Deutschland
