@@ -1,7 +1,10 @@
 import Spline from '@splinetool/react-spline'
 import { motion } from 'framer-motion'
+import LanguageSwitch from './LanguageSwitch'
+import { useI18n } from '../lib/i18n'
 
 export default function Hero() {
+  const { t } = useI18n()
   return (
     <section className="relative overflow-hidden pt-28 pb-20">
       <div className="absolute inset-0">
@@ -48,6 +51,7 @@ export default function Hero() {
           <div className="relative h-full w-full overflow-hidden rounded-xl">
             <Spline scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode" style={{ width: '100%', height: '100%' }} />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent" />
+            <div className="absolute right-3 top-3"><LanguageSwitch /></div>
           </div>
         </div>
       </div>
